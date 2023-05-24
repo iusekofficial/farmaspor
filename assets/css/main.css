@@ -167,6 +167,11 @@ ul li {
   text-align: center;
 }
 
+.section-title img,
+.section-title2 img {
+  width: 100px;
+}
+
 /* 
  * 3.0 Helper Class
  */
@@ -270,15 +275,24 @@ ul li {
 
 .program-vertical {
   display: block;
+  padding: 10px;
 }
 
-@media (min-width: 768px) {
-  .program-horizontal {
-    display: block;
+@media (max-width: 768px) {
+  .intro .row {
+    padding-top: 50px;
   }
 
-  .program-vertical {
-    display: none;
+  .intro #countdown-timer {
+    margin-top: -150px;
+    margin-bottom: -200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro #countdown-timer {
+    margin-top: -200px;
+    margin-bottom: -200px;
   }
 }
 
@@ -299,6 +313,15 @@ ul li {
     letter-spacing: 1px;
     margin: 0 0 60px;
     text-align: left;
+  }
+
+  .program-horizontal {
+    display: block;
+    padding: 10px;
+  }
+
+  .program-vertical {
+    display: none;
   }
 }
 
@@ -365,6 +388,10 @@ ul li {
   font-weight: 700;
   margin-right: 5px;
   letter-spacing: 3px;
+}
+
+.site-branding .logo img {
+  width: 40px;
 }
 
 .site-branding .logo:focus,
@@ -439,7 +466,7 @@ ul li {
 /* 
  * 5.1 Countdown Timer
  */
- .countdown-container {
+.countdown-container {
   transform: scale(0.75);
 
 }
@@ -447,7 +474,7 @@ ul li {
 .clock-item .inner {
   height: 0px;
   padding-bottom: 100%;
-  position: relative; 
+  position: relative;
   width: 100%;
 }
 
@@ -459,9 +486,9 @@ ul li {
 }
 
 .text {
-  color: #fff;    
+  color: #fff;
   font-size: 30px;
-  font-weight: bold;  
+  font-weight: bold;
   margin-top: -50px;
   position: absolute;
   top: 50%;
@@ -480,13 +507,13 @@ ul li {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .clock-item {
-      margin-bottom: 30px;        
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
   .clock-item {
-      margin: 0px 30px 30px 30px;
+    margin: 0px 30px 30px 30px;
   }
 }
 
