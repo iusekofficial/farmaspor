@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FARMASPOR | İÜSEK</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+
+                        <!-- logo image  -->
+                        <img src="assets/images/logo/iusek.png" alt="Logo" width="40px">
+                        <img src="assets/images/logo/farmaspor.png" alt="Logo" width="40px">
+
+                        FARMASPOR
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">Hakkımızda</a></li>
+                    <li><a data-scroll href="#speakers">Konuşmacılar</a></li>
+                    <li><a data-scroll href="#schedule">Kongre Planı</a></li>
+                    <li><a data-scroll href="#partner">Sponsorlar</a></li>
+                    <!-- <li><a data-scroll href="#faq">SSS</a></li> -->
+                    <!--<li><a data-scroll href="#photos">Resimler</a></li>-->
+
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <button onclick="topFunction()" id="pageUpBtn" title="Go to top"><i class="ion-arrow-up-c"></i><p>Yukarı</p></button>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <div class="row">
+                <br>
+                <br>
+                <h1>FARMASPOR</h1>
+                <h1>I. Ulusal Spor Eczacılığı Kongresi</h1>
+                <h2>Türkiye'nin ve Dünyanın İlk Spor Eczacılığı Kongresi</h2>
+            </div>
+            <div id="countdown-timer" class="row">
+                <div class="countdown countdown-container container">
+                    <div class="clock row">
+                        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-days" class="clock-canvas"></div>
+
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-days type-time">GÜN</p>
+                                    </div><!-- /.text -->
+                                </div><!-- /.inner -->
+                            </div><!-- /.wrap -->
+                        </div><!-- /.clock-item -->
+
+                        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-hours" class="clock-canvas"></div>
+
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-hours type-time">SAAT</p>
+                                    </div><!-- /.text -->
+                                </div><!-- /.inner -->
+                            </div><!-- /.wrap -->
+                        </div><!-- /.clock-item -->
+
+                        <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-minutes" class="clock-canvas"></div>
+
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-minutes type-time">DAKİKA</p>
+                                    </div><!-- /.text -->
+                                </div><!-- /.inner -->
+                            </div><!-- /.wrap -->
+                        </div><!-- /.clock-item -->
+
+                        <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                            <div class="wrap">
+                                <div class="inner">
+                                    <div id="canvas-seconds" class="clock-canvas"></div>
+
+                                    <div class="text">
+                                        <p class="val">0</p>
+                                        <p class="type-seconds type-time">SANİYE</p>
+                                    </div><!-- /.text -->
+                                </div><!-- /.inner -->
+                            </div><!-- /.wrap -->
+                        </div><!-- /.clock-item -->
+                    </div><!-- /.clock -->
+                </div><!-- /.countdown-wrapper -->
+            </div>
+            <div class="row">
+                <a class="btn btn-white" data-scroll href="#registration">Şimdi Kayıt Ol !</a>
+                <br>
+                <br>
+                <h2>3 Haziran 2023</h2>
+                <h2>İ.Ü. Prof. Dr. Fuat Sezgin Kongre ve Kültür Merkezi</h2>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">BİZ KİMİZ?</h3>
+
+                    <p class="text-justify">İstanbul Üniversitesi Spor Eczacılığı Kulübü (İÜSEK), Türkiye'de ve dünyada
+                        spor eczacılığı
+                        alanında çalışan ilk öğrenci birliğidir. İÜSEK topluluk olarak faaliyetlerine 23 Nisan 2021'de
+                        ve resmi olarak 27 Eylül 2021'de başlamıştır. Amacımız spor eczacılığının tanınınırlığını
+                        arttırarak farkındalık yaratmaktır. Besin takviyeleri ve doping maddelerinin kullanımı konusunda
+                        bilinç oluşturmak ve insanları spora teşvik etmek için faaliyetlerde bulunmaktayız. Ayrıca,
+                        fakülte öğrencileri arasında spor faaliyetleriyle sosyal bir ortam yaratmayı hedefliyoruz.
+                        İÜSEK; spor, sağlık ve akademi arasındaki önemli bağlantıyı vurgulamak için aktif olarak
+                        çalışmaktadır.</p>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">KONGREMİZ</h3>
+
+                    <p class="text-justify">Kongremiz, spor eczacılığı alanındaki uzmanların bilgilerini paylaşacağı
+                        değerli bir platform oluşturmayı hedeflemektedir. Katılımcılar, spor eczacılığındaki son
+                        yenilikleri öğrenerek, sporcuların performansını artırmak ve sağlıklarını korumak için en iyi
+                        uygulamaları keşfedeceklerdir. Aynı zamanda spor eczacılığının gereksinimleri, sorumlulukları ve
+                        ilgili konular hakkında interaktif bir panellere de katılabileceklerdir. Bu kongrede, spor
+                        eczacılığındaki güncel gelişmeler hakkında bilgi edinecek ve sektördeki uzmanlarla networking
+                        fırsatı yakalayacaksınız.</p>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <strong>Akademisyenler, uzmanlar ve sektör profesyonelleri ile;</strong>
+                    <br>
+                    <br>
+
+
+                    <ul class="list-arrow-right">
+
+                        <li>Spor eczacılığı alanındaki güncel gelişmeler</li>
+                        <li>Sporcuların sağlığını destekleyen konular</li>
+
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+            </div>
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>3 Haziran<br>2023</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Beyazıt / Fatih<br>İstanbul</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>450<br>Katılımcı</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-speakerphone"></i>
+                    <h3>13<br>Konuşmacı</h3>
+
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">KONUŞMACILAR</h3>
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/aysegul-birlik.jpg">
+                        </figure>
+                        <h4>Uzm. Ecz. Ayşegül BİRLİK</h4>
+                        <ul class="social-block">
+                            <li><a href="https://www.aysegulbirlik.com.tr/"><i class="ion-android-globe"></i></a></li>
+                            <li><a href="https://instagram.com/ecz.aysegulbirlik?igshid=MzRlODBiNWFlZA=="><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/irem-ergec.jpg">
+                        </figure>
+                        <h4>Ecz. İrem ERGEÇ</h4>
+                        <ul class="social-block">
+                            <li><a href="https://instagram.com/spor_eczacisi?igshid=MzRlODBiNWFlZA=="><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/durisehvar-ozer-unal.jpg">
+                        </figure>
+                        <h4>Prof. Dr. Durişehvar ÖZER ÜNAL</h4>
+                        <ul class="social-block">
+                            <li><a href="https://avesis.istanbul.edu.tr/durisehvar/"><i class="ion-android-globe"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+
+            <h2 class="text-center">Tüm Kongre Konuşmacılarımız Çok Yakında Sizlerle!</h2>
+
+        </div>
+    </section>
+
+    <section id="registration" class="section registration bg-image2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title2">KAYIT OL</h3>
+                </div>
+            </div>
+            <div>
+                <form action="#" id="registration-form">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSd_RcHeOiJMQsIJ_tKe3NTjlCnR7-3BYXwTTcM9Cgpi92vW9g/viewform?embedded=true"
+                        width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">KONGRE PROGRAMI</h3>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./assets/images/program/program-horizontal.png" alt="Kongre Programı" class="img-responsive program-horizontal">
+                <img src="./assets/images/program/program-vertical.png" alt="Kongre Programı" class="img-responsive program-vertical">
+            </div>
+        </div>
+    </section>
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">SPONSORLARIMIZ</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/sporcu-eczane.png"
+                            alt="Sporcu Eczane Logo"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/dermokozmetik-okulu-otc-okulu.png"
+                            alt="Dermokozmetik Okulu OTC Okulu"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/hardline-nutrition.png"
+                            alt="Hardline Nutrition"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/big-joy.png" 
+                            alt="Big Joy"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/nutrever-sports-science.png"
+                            alt="Nutrever Sports Science"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/torq-nutrition.png"
+                            alt="Torq Nutrition"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/olimp-sport-nutrition.png"
+                            alt="Olimp Sport Nutrition"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/multipower.png" 
+                            alt="Multipower"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/tr-pharm.png" 
+                            alt="TR Pharm"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/mediniti.png" 
+                            alt="Mediniti"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/pal-coffee.png" 
+                            lt="Pal Coffee"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box"><img src="./assets/images/partner/mahmood-coffee.png"
+                            alt="Mahmood Coffee"></a>
+                </div>
+            </div>
+    </section>
+
+    <!-- <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">KONGRE SSS</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3>Hello</h3>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive"> I have specific questions that are not addressed
+                                        here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <!-- <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Resimler</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <h3 class="section-title">KONGRE KONUMU</h3>
+                <div class="col-sm-5">
+                    <address>
+                        <p>İ.Ü. Prof. Dr. Fuat Sezgin Kongre ve Kültür Merkezi<br> İstanbul Üniversitesi Merkez
+                            Kampüsü<br>
+                            34452 Beyazıt / Fatih - İSTANBUL<br> E-posta:
+                            iusekofficial@gmail.com</p>
+                    </address>
+                </div>
+                <div class="col-sm-7 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12042.538266193502!2d28.961694000000005!3d41.011371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab98e7eec517b%3A0xaba4ddd7fb328e90!2s%C4%B0stanbul%20%C3%9Cniversitesi%20Prof.%20Dr.%20Fuat%20Sezgin%20Kongre%20ve%20K%C3%BClt%C3%BCr%20Merkezi!5e0!3m2!1sen!2str!4v1684685140075!5m2!1sen!2str"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Developed by <a href="http://technextit.com">Technext Limited</a></p>
+                    <p class="site-info">Designed by <a href="https://www.linkedin.com/in/evren-geydirici/">
+                            Evren Geydirici</a></p>
+                    <ul class="social-block">
+                        <li><a href="https://instagram.com/iusekofficial?igshid=MzRlODBiNWFlZA=="><i
+                                    class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="https://twitter.com/iusekofficial?s=11"><i
+                                    class="ion-social-twitter-outline"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/i%CC%87usek/"><i
+                                    class="ion-social-linkedin-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="assets/js/kinetic.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.final-countdown.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
