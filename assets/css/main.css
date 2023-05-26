@@ -325,6 +325,10 @@ ul li {
   }
 }
 
+.row h4 {
+  text-align: center;
+}
+
 /* 
  * 4.0 Navigation
  */
@@ -640,19 +644,29 @@ ul li {
   background-color: rgb(230, 230, 230);
 }
 
-.partner .partner-box img {
-  display: block;
-  justify-content: center;
+.partner .partner-box {
   opacity: 0.3;
-  width: 150px;
-  margin: 25px auto;
   -webkit-transition: 0.5s all linear;
   transition: 0.5s all linear;
   background: no-repeat center center/contain;
 }
 
-.partner .partner-box img:hover {
+.partner .partner-box:hover {
+  text-decoration: none;
   opacity: 1;
+}
+
+.partner .partner-box img {
+  display: block;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 25px auto;
+}
+
+.partner .partner-box h4 {
+  text-align: center;
+  color: #4e4e4e;
 }
 
 /* 
