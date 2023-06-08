@@ -257,7 +257,7 @@ ul li {
 
 .bg-image2 {
   position: relative;
-  background: url(../images/backgrounds/generic-bg-2.webp) no-repeat center center/cover;
+  background-color: rgb(230, 230, 230);
 }
 
 .bg-image2::before {
@@ -267,15 +267,6 @@ ul li {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-.program-horizontal {
-  display: none;
-}
-
-.program-vertical {
-  display: block;
-  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -313,15 +304,6 @@ ul li {
     letter-spacing: 1px;
     margin: 0 0 60px;
     text-align: left;
-  }
-
-  .program-horizontal {
-    display: block;
-    padding: 10px;
-  }
-
-  .program-vertical {
-    display: none;
   }
 }
 
@@ -598,6 +580,7 @@ ul li {
 
 .speaker p {
   margin-bottom: 5px;
+  font-size: small;
 }
 
 .speaker img:hover {
